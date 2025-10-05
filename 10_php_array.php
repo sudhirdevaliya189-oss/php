@@ -1,8 +1,6 @@
 <?php
-
 $a=array(1,2,3,4,5);
-$b=array("n1" => "php" , "n2" => "python" , "n3" => "rdbms");
-
+$b=array("n1 " => " php" , "n2 " => " python" , "n3 " => " rdbms");
 ?>
 <html>
 <head>
@@ -22,7 +20,7 @@ $b=array("n1" => "php" , "n2" => "python" , "n3" => "rdbms");
 		</td>
 	</tr>
 	<tr>
-		<td>associative array:</td>
+		<td>Associative array:</td>
 		<td><?php
 			foreach($b as $c=>$value)
 			{

@@ -5,7 +5,6 @@ if(isset($_POST['submit']))
 $a=$_POST['num1'];
 $b=$_POST['num2'];
 $op=$_POST['op'];
-
 switch($op)
 {
 	case 'add':

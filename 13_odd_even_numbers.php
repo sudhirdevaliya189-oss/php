@@ -1,12 +1,11 @@
 <?php
-
+$n=0;
 if(isset($_POST['submit']))
 {
 $n=$_POST['num'];
 }
 
 ?>
-
 <html>
 <head>
 <title>odd or even numbers</title>

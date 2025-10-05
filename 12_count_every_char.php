@@ -1,5 +1,5 @@
 <?php
-
+$len=0;
 if(isset($_POST['submit']))
 {
 	$str=$_POST['str'];
@@ -7,13 +7,13 @@ if(isset($_POST['submit']))
 	$len=strlen($str);
 
 }
-
+$len=0;
 ?>
 
 
 <html>
 <head>
-	<title>count char</title>
+	<title>count character</title>
 </head>
 <body>
 <form method="post">

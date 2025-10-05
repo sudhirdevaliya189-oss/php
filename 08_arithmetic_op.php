@@ -1,64 +1,63 @@
-<?php
-$res=" ";
-if(isset($_POST['submit']))
-{
-$a=$_POST['num1'];
-$b=$_POST['num2'];
-$op=$_POST['op'];
+	<?php
+	$res=" ";
+	if(isset($_POST['submit']))
+	{
+	$a=$_POST['num1'];
+	$b=$_POST['num2'];
+	$op=$_POST['op'];
+	switch($op)
+	{
+		case '+':
+		$res=$a+$b;
+		break;
 
-switch($op)
-{
-	case '+':
-	$res=$a+$b;
-	break;
+		case '-':
+		$res=$a-$b;
+		break;
+		
+		case '*':
+		$res=$a*$b;
+		break;
 
-	case '-':
-	$res=$a-$b;
-	break;
-	
-	case '*':
-	$res=$a*$b;
-	break;
-
-	case '/':
-	$res=$a/$b;
-	break;
-}
-}
-?>
-<html>
-<head>
-<title>arithmetic operator</title>
-</head>
-<body>
-<form method="post">
-	<table border="1" align="center">
-	<tr>
-		<td>enter the number 1:</td>
-		<td><input type="text" name="num1"></td>
-	</tr>
-	<tr>
-		<td>enter the number 2:</td>
-		<td><input type="text" name="num2"></td>
-	</tr>
-	<tr>
-		<td><select name="op">
-			<option name="+">+</option>
-			<option name="-">-</option>
-			<option name="*">*</option>
-			<option name="/">/</option>
-		</select></td>
-	</tr>
-	<tr>
-		<td>Result:</td>
-		<td><?php  echo " ".$res;    ?></td>
-	</tr>
-			
-	<tr align="center">
-		<td colspan="2"><input type="submit" name="submit"></td>
-	</tr>
+		case '/':
+		$res=$a/$b;
+		break;
+	}
+	}
+	?>
+	<html>
+	<head>
+	<title>arithmetic operator</title>
+	</head>
+	<body>
+	<form method="post">
+		<table border="1" align="center">
+		<tr>
+			<td>enter the number 1:</td>
+			<td><input type="text" name="num1"></td>
+		</tr>
+		<tr>
+			<td>enter the number 2:</td>
+			<td><input type="text" name="num2"></td>
+		</tr>
+		<tr>
+			<td><select name="op">
+				<option name="+">+</option>
+				<option name="-">-</option>
+				<option name="*">*</option>
+				<option name="/">/</option>
+			</select></td>
+		</tr>
+		<tr>
+			<td>Result:</td>
+			<td><?php  echo " ".$res;    ?></td>
+		</tr>
+				
+		<tr align="center">
+			<td colspan="2"><input type="submit" name="submit"></td>
+		</tr>
+		</table>
 	</table>
-</table>
-</form>
-</body>
-</html>
+	</form>
+	</body>
+	</html>

@@ -5,16 +5,15 @@ if(isset($_POST['submit']))
 $no1=$_POST['num1'];
 $no2=$_POST['num2'];
 $no3=$_POST['num3'];
-
-	if($no1>$no2 && $no1>$no3)
+if($no1>$no2 && $no1>$no3)
 {
 	$res= "number 1 is maximum";
 }
-	else if($no2>$no1 && $no2>$no3)
+else if($no2>$no1 && $no2>$no3)
 {
 	$res= "number 2 is maximum";
 }
-	else
+else
 {
 	$res= "number 3 is maximum";
 }

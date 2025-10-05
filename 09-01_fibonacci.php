@@ -5,8 +5,7 @@ if(isset($_POST['submit']))
 $n=$_POST['num1'];
 $n1=0;
 $n2=1;
-
- for($i=1;$i<=$n;$i++)
+for($i=1;$i<=$n;$i++)
 {
 	$res.= $n1;
 	$next=$n1+$n2;

@@ -3,8 +3,7 @@ $res=" ";
 if(isset($_POST['submit']))
 {
 $no=$_POST['num'];
-
-  if($no%2==0)
+if($no%2==0)
 {
   $res= "number is even";
 }
@@ -20,7 +19,7 @@ $no=$_POST['num'];
 </head>
 <body>
 <form method="post">
-	<table border="1" align="center">
+	<table border="2" align="center">
 	<tr>
 		<td>enter the number:</td>
 		<td><input type="text" name="num"></td>
